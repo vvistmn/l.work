@@ -1,0 +1,148 @@
+body {
+    font-family: 'Montserrat', sans-serif; /*Указали, что будем использовать этот шрифт*/
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    
+}
+h1 {
+    font-size: 65px;
+    letter-spacing: 0.2em;/*Расстояние между буквами*/
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 40px;
+    color: black;
+    margin: 0;
+}
+h3 {
+    color: #4c4c4c;
+    font-size: 18px;
+    text-transform: none;
+    margin-top: 60px;
+    margin-bottom: 37px;
+}
+.container {
+    width: 1170px;/*Указали ширину контейнера*/
+    margin: 0 auto;/*Сделали равные отступы 0 пикселей сверху и снизу и автоматически отсчитали слева и справа*/
+}
+.header {
+    background: #30697d url(../img/bg.jpg) no-repeat center top / cover;/*Сделали фон при помощи картинки(указали цвет фона, если картинка долго будет загружаться, чтобы клиент не видел белый фон, указали свойства, при котором картинка будет растягиваться по ширине экрана, а не повторяться, указываем положение по центру сверху.*/
+    color: white;
+    padding-bottom: 420px;
+    padding-top: 90px;
+}
+.nav {
+    display: flex;/*Все дочерние элементы становятся flex элементами, выстроенными в ряд. Все они по вертикали примут размер самого высокого элемента, который станет определяющим вертикального размера.*/
+    justify-content: space-between;/*Разграничили логотип и почту по разным углам*/
+    align-items: center;/*Для центрирования элемента по перекрёстной оси (в данном случае - вертикальной) используется свойство align-items. Для центрирования элемента по главной оси (в данном случае - горизонтально), используется свойство justify-content.*/
+}
+.mail {
+    color: white;
+    text-decoration: none;/*Указали отстутствие подчеркивания у ссылки*/
+    font-size: 14px;
+}
+.offer {
+    margin-top: 293px;
+    text-align: center;
+}
+.offer h1 {
+    border-top: 3px solid #9ab4be;
+    border-bottom: 3px solid #9ab4be;
+    width: 640px;
+    padding: 15px auto;
+    margin: 0 auto;
+}
+.offer p {
+    font-size: 25px;
+    letter-spacing: 0.15em;
+    color: #d0d9dd;
+}
+.text {
+    width: 630px;
+    padding: 45px;
+}
+.text p {
+    color: #737373;
+    line-height: 1,6em;
+}
+.man img {
+    margin-bottom: -3.9px;
+}
+.btn {
+    background: #ff2b4a;
+    color: #fff;
+    font-size: 16px;
+    width: 202px;
+    display: block; /* Указываем для того, чтобы применилась длина. Изначально это был строчный элементы и длина букв равно длине заливке*/
+    text-decoration: none;
+    text-align: center;/* Указываем, что текст по горизонтале должен находиться в центре*/
+    padding: 12px 0;
+    margin-top: 60px;
+}
+.about {
+    padding-top: 114px;
+}
+.about .container {
+    display: flex;/* Выстраиваем все элементы в контейнере в ряд*/
+    justify-content: space-between;
+}
+.process-heading {
+    padding-top: 112px;
+    text-align: center;/*Распределили все по центру*/
+}
+.process-heading p {
+    color: #6f6f6f;
+    margin-top: 30px;
+}
+.process {
+    background: #f6f6f6;
+}
+.step {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.step li {
+    width: 280px;
+    height: 280px;
+    background: #10c6fc;
+    color: white;
+}
+.step li:nth-child(2){/*Указываем, что обращаемся ко второму элементу*/
+    background: #835aeb;
+}
+.step li:nth-child(3) {
+    background: #002453;
+}
+.step li:nth-child(4) {
+    background: #ff2b4a;
+}
+.step li div {
+    text-align: center;
+    margin-top: 100px;
+}
+.portfolio-heading {
+    padding-top: 112px;
+    text-align: center;
+}
+.portfolio-heading p{
+    color: #6f6f6f;
+    margin-top: 30px;
+}
+.big__li {
+    width: 560px !important;
+}
+.footer {
+    background: hsl(0, 0%, 13%);
+    color: #9c9c9c;
+    font-size: 12px;
+}
